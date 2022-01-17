@@ -1,0 +1,48 @@
+<form class="form admin-form" data-form="chat">
+    <div id="chat" class="chat">
+        <div class="chat__name">Lorem ipsum dolor sit amet, consectetur adipiscing </div>
+
+        <div id="chat__body" class="chat__body">
+            <div class="chat__item">
+                <div class="message-user">
+                    <div class="message">
+                        <div class="text">
+                            <p>Добрый день!</p>
+                        </div>
+                        <div class="date">
+                            <span class="time">16.53</span>
+                            <span class="status"><img src="../img/ico/message-ok.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="img"><img src="../img/ico/user-avatar.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="chat__item">
+                <div class="message-operator">
+                    <div class="img"><img src="../img/ico/support-white.svg" alt=""></div>
+                    <div class="message">
+                        <div class="text">
+                            <p>Вас приветствует служба поддержки!</p>
+                        </div>
+                        <div class="date">
+                            <span class="time">16.53</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- chat -->
+
+    <div class="chat__footer">
+        <div class="form-group">
+            <textarea id="message-user" class="form-control" placeholder="Введите своё сообщение"></textarea>
+            <div id="img-preview"></div>
+        </div>
+        <label class="upload">
+            <input id="choose-file" type="file" class="upload__input" name="choose-file">
+            <label for="choose-file"><span class="img"><img src="../img/ico/add-file.svg" alt="" /></span></label>
+        </label>
+        <button type="button" id="chat-send" class="btn"><img src="../img/ico/send.svg" alt="" />Отправить</button>
+    </div>
+</form>

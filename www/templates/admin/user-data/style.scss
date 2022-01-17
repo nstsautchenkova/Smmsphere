@@ -1,0 +1,17 @@
+.user-date{
+    .form-btn{
+        width: auto;
+        min-width: 150px;
+
+        @media (max-width: 600px) {
+            height: 35px;
+        }
+    }
+    .mobile-btn{
+        display: none;
+
+        @media (max-width: 1200px) {
+            display: flex;
+        }
+    }
+}

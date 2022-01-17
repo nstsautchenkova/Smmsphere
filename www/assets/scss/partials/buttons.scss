@@ -1,0 +1,185 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  background: $blue;
+  border-radius: $border-radius;
+
+  font-weight: 700;
+  font-size: $primary-FS;
+  line-height: 100%;
+  color: $white;
+  text-decoration: none;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  padding: 16px 26px 15px;
+  cursor: pointer;
+  transition: .3s all;
+
+  @media (max-width: 600px) {
+    padding: 6px 26px 5px;
+    min-height: 30px;
+    font-weight: 500;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #AC2CF0;
+  }
+}
+
+.btn {
+  @extend .btn;
+
+  background: $btn_gradient;
+
+  &:hover,
+  &:active {
+    background: $btn-hover_gradient;
+  }
+
+  &:focus {
+    background: $btn_gradient;
+  }
+
+  &-gray {
+    background: #EFF3FE;
+    color: #282C4B;
+
+    &:hover,
+    &:active {
+      background: $blue;
+      color: #fff;
+    }
+
+    &:focus {
+      background: #EFF3FE;
+      color: #282C4B;
+    }
+  }
+
+  &-outline {
+    border: 1px solid $blue;
+    color: $blue;
+
+    &:hover,
+    &:active {
+      border: 1px solid transparent;
+      background: $btn-hover_gradient;
+      color: $white;
+    }
+
+    &:focus {
+      border: 1px solid $blue;
+      color: $blue;
+    }
+  }
+
+  &-icon {
+    width: 46px;
+    height: 46px;
+
+    background: #ECECF2;
+    border-radius: 8px;
+
+    &:hover,
+    &:active {
+      background: $blue;
+    }
+
+    &:focus {
+      background: #ECECF2;
+    }
+
+    &_small {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  &-icon-outline {
+    width: 46px;
+    height: 46px;
+
+    background: transparent;
+    border: 1px solid #ECECF2;
+    border-radius: 8px;
+    padding: 0 !important;
+
+    &:hover,
+    &:active {
+      background: transparent;
+      border: 1px solid $blue;
+    }
+
+    &:focus {
+      background: #ECECF2;
+    }
+
+    &_small {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  &-iconText {
+    background: transparent;
+    border: 1px solid $blue;
+    border-radius: 8px;
+
+    color: $blue;
+    padding: 13px 18px 15px;
+
+    .img {
+      margin-right: 8px;
+    }
+
+    &:hover,
+    &:active {
+      color: #1C1D21;
+
+      path {
+        fill: #1C1D21;
+      }
+    }
+
+    &:focus {
+      color: $blue;
+
+      path {
+        fill: $blue;
+      }
+    }
+
+    &:disabled,
+    &[disabled],
+    &:disabled:hover,
+    &:disabled:focus {
+      border: 1px solid #ECECF2;
+      color: #ECECF2;
+
+      path {
+        fill: #ECECF2;
+      }
+    }
+
+  }
+
+  &:disabled,
+  &[disabled],
+  &:disabled:hover,
+  &:disabled:focus {
+    background: #EFF3FE;
+  }
+
+}
+
+.btn-100 {
+  width: 100% !important;
+}

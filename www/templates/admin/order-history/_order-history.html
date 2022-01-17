@@ -1,0 +1,46 @@
+<div class="order-history">
+    <div class="order-history">
+        <div class="column-tabs">
+            <ul class="tabs-nav" role="tablist">
+                <li class="tabs-nav__item active">
+                    <a class="tabs-nav__link active" data-toggle="tab" href="#tab-active" role="tab" aria-selected="true">
+                        <span class="img"><img src="../img/ico/list.svg" alt="" /></span>
+                        <div class="tit">Активные</div>
+                    </a>
+                </li>
+                <li class="tabs-nav__item">
+                    <a class="tabs-nav__link" data-toggle="tab" href="#tab-stopped" role="tab" aria-selected="false"
+                        aria-expanded="false">
+                        <span class="img"><img src="../img/ico/list.svg" alt="" /></span>
+                        <div class="tit">Остановленые</div>
+                    </a>
+                </li>
+                <li class="tabs-nav__item">
+                    <a class="tabs-nav__link" data-toggle="tab" href="#tab-completed" role="tab" aria-selected="false"
+                        aria-expanded="false">
+                        <span class="img"><img src="../img/ico/list.svg" alt="" /></span>
+                        <div class="tit">Выполненые</div>
+                    </a>
+                </li>
+            </ul>
+    
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-active" role="tabpanel">
+                    @@include('table.html')
+                    @@include('../pagination/_pagination.html')
+                </div>
+    
+                <div class="tab-pane" id="tab-stopped" role="tabpanel">
+                    @@include('table.html')
+                    @@include('../pagination/_pagination.html')
+                </div>
+    
+                <div class="tab-pane" id="tab-completed" role="tabpanel">
+                    @@include('table.html')
+                    @@include('../pagination/_pagination.html')
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>

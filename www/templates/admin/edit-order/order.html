@@ -1,0 +1,27 @@
+<div class="order">
+    <div class="form-group form-group--outline">
+        <label>Ссылка</label>
+        <input class="form-control" type="text" placeholder="https://www.instagram.com/p/CSwoVwUjQX-/">
+    </div>
+
+    <div class="form-group--row">
+        <div class="form-group form-group--outline">
+            <label>Количество</label>
+            @@include('../counter/_counter.html')
+        </div>
+        <div class="form-group form-group--outline">
+            <label>Стоимость</label>
+            <input class="form-control form-control--center form-control--price" type="text" value="0 ₽">
+        </div>
+    </div>
+
+    <div class="form-group form-group--outline">
+        <label>Промокод</label>
+        <div class="form-promocode">
+            <input class="form-control" type="text" placeholder="Введите промокод">
+            <button type="button" class="btn">Активировать</button>
+        </div>
+    </div>
+
+    <button type="button" class="btn form-btn">Продолжить</button>
+</div>

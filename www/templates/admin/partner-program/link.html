@@ -1,0 +1,40 @@
+<div class="pp-item pp-link">
+    <div class="admin-tit">
+        <div class="img"><img src="../img/ico/link.svg" alt="" /></div>
+        <h3>Моя партнерская ссылка</h3>
+    </div>
+
+    <form class="form admin-form" data-form="pp-link">
+        <div class="form-group form-group--outline">
+            <div class="copy-link--img">
+                <input id="copyLink" class="form-control copy-link__input" type="text"
+                    value="https://smmsphere.ru/?ref=722375" readonly>
+                <button type="button" class="copy-link__btn" onclick="copyF1()">
+                    <span class="img"><img src="../img/ico/copy.svg" alt="" /></span>
+                </button>
+                <script>
+                    function copyF1() {
+                        var copyText = document.getElementById("copyLink");
+                        copyText.select();
+                        document.execCommand("copy");
+                    }
+                </script>
+            </div>
+        </div>
+        <p>Вы можете использовать ссылки на любую страницу сервиса. </p>
+    </form>
+
+    <div class="push-link">
+        <div class="tit">
+            <hr />
+            <span>ОТПРАВИТЬ ВАШУ ПАРТНЕРСКУЮ ССЫЛКУ</span>
+        </div>
+        <ul class="push-link__platform">
+            <li><a href="#"><img src="../img/platform-ico/twitter.svg" alt="" /></a></li>
+            <li><a href="#"><img src="../img/platform-ico/instagram.svg" alt="" /></a></li>
+            <li><a href="#"><img src="../img/platform-ico/facebook.svg" alt="" /></a></li>
+            <li><a href="#"><img src="../img/platform-ico/telegram.svg" alt="" /></a></li>
+            <li><a href="#"><img src="../img/platform-ico/vkontakte.svg" alt="" /></a></li>
+        </ul>
+    </div>
+</div>

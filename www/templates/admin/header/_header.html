@@ -1,0 +1,44 @@
+<header class="header header-admin">
+    <div class="container">
+        <div class="header__row">
+            @@include('../logo/_logo.html')
+
+            <div class="header__menu">
+                @@include('../menu/_menu.html')
+            </div>
+
+            <div class="header__btn">
+                <div class="header-balance">
+                    <div class="header-balance__tit">
+                        Баланс: 
+                        <span class="value"> 200 ₽</span>
+                    </div>
+                    <a href="#" class="header-balance__btn">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.688 7.488H7.84V12.456H5.296V7.488H0.448V5.184H5.296V0.215999H7.84V5.184H12.688V7.488Z"
+                                fill="#9A9CA5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="header-user user">
+                    <div class="user__name">Маргарита</div>
+                    <div class="user__avatar">
+                        <div class="img"><img src="../img/ico/user-avatar.svg" alt=""/></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-menu--open">
+                <div class="trigger-menu">
+                    <div class="hamburger-menu">
+                        <div class="hamburger-menu__bar"></div>
+                        <div class="hamburger-menu__bar"></div>
+                        <div class="hamburger-menu__bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

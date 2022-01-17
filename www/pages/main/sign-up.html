@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>SMMsphere</title>
+
+    <meta name="description" content="Раскрутка и продвижение в социальных сетях">
+    <meta property="og:title" content="SMMsphere">
+    <meta property="og:description" content="Раскрутка и продвижение в социальных сетях">
+    <meta property="og:image" content="../img/meta-img.jpg">
+    <meta property="og:image:alt" content="SMMsphere">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper page--entry">
+        @@include('../../templates/main/header/_header.html')
+
+        <main>
+            <section class="entry sign-up">
+                <div class="container">
+                    <div class="entry__row">
+                        <div class="entry__form">
+                            <div class="entry__body">
+                                @@include('../../templates/main/logo/_logo.html')
+                                <div class="section-title mobile--section-title">
+                                    <h2 class="mobile-tit">
+                                        <a href="#" class="logo-ico"><img src="../img/logo-ico.svg" alt="" /></a>
+                                        Зарегистрируйтесь, чтобы начать.
+                                    </h2>
+                                </div>
+                                <div class="section-title">
+                                    <h2>Зарегистрируйтесь, чтобы начать.</h2>
+                                    <p>Введите свои данные, чтобы продолжить</p>
+                                </div>
+                                @@include('../../templates/main/entry/sign-up.html')
+                            </div>
+                        </div>
+                        <div class="entry__img"><img src="../img/ico/entry.svg" alt="" /></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    @@include('../../templates/main/modal/_modal.html')
+    <script src="../js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<div class="admin-services__item">
+    <div class="form-group form-group--outline">
+        <label>Площадка</label>
+        <div class="select select--icon">
+            <select class="selectpicker platform-select" name="platformSelect">
+                <option data-icon="ico-instagram" valute="instagram">Instagram</option>
+                <option data-icon="ico-telegram" valute="telegram">Telegram</option>
+                <option data-icon="ico-twitch" valute="twitch">Twitch</option>
+                <option data-icon="ico-twitter" valute="twitter">Twitter</option>
+                <option data-icon="ico-youTube" valute="youTube">YouTube</option>
+                <option data-icon="ico-tumblr" valute="tumblr">Tumblr</option>
+                <option data-icon="ico-discord" valute="discord">Discord</option>
+                <option data-icon="ico-vkontakte" valute="vkontakte">Vkontakte</option>
+                <option data-icon="ico-snapchat" valute="snapchat">Snapchat</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group form-group--outline">
+        <label>Тип услуги</label>
+        <div class="select select--icon">
+            <select class="selectpicker service-type" name="serviceType">
+                <option data-icon="ico-service-ico" valute="Подписчики">Подписчики</option>
+                <option data-icon="ico-service-heart" valute="Instagram">Instagram</option>
+                <option data-icon="ico-service-video" valute="YouTube">YouTube</option>
+                <option data-icon="ico-service-eye2" valute="Twitch">Twitch</option>
+                <option data-icon="ico-service-dashboard" valute="Discord">Discord</option>
+                <option data-icon="ico-service-ico" valute="Подписчики">Подписчики</option>
+                <option data-icon="ico-service-heart" valute="Instagram">Instagram</option>
+                <option data-icon="ico-service-video" valute="YouTube">YouTube</option>
+                <option data-icon="ico-service-eye2" valute="Twitch">Twitch</option>
+                <option data-icon="ico-service-dashboard" valute="Discord">Discord</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group form-group--outline">
+        <label>Тариф</label>
+        <div class="select">
+            <select class="selectpicker" name="selectTafiffs" data-size="4">
+                <option value="tariff-1">Подписчики "СуперЭконом": 0.23₽/1шт</option>
+                <option value="tariff-2">Подписчики "Эконом": 0.23₽/1шт</option>
+                <option value="tariff-3">Подписчики "Стандарт": 0.23₽/1шт</option>
+                <option value="tariff-4">Подписчики "Премиум": 0.23₽/1шт</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group form-group--outline">
+        <label>Ссылка</label>
+        <input class="form-control" type="text" placeholder="https://www.instagram.com/p/CSwoVwUjQX-/">
+    </div>
+
+    <div class="form-group--row">
+        <div class="form-group form-group--outline">
+            <label>Количество</label>
+            @@include('../counter/_counter.html')
+        </div>
+        <div class="form-group form-group--outline">
+            <label>Стоимость</label>
+            <input class="form-control form-control--center form-control--price" type="text" value="0 ₽">
+        </div>
+    </div>
+
+    <div class="form-group form-group--outline">
+        <label>Промокод</label>
+        <div class="form-promocode">
+            <input class="form-control" type="text" placeholder="Введите промокод">
+            <button type="button" class="btn">Активировать</button>
+        </div>
+    </div>
+
+    <button type="button" class="btn form-btn">Создать заказ</button>
+</div>

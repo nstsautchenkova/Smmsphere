@@ -1,0 +1,117 @@
+.tabs {
+    min-height: 365px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+
+    @media (max-width: 600px) {
+        grid-template-columns:  1fr;
+        padding: 0 27px;
+    }
+    @media (max-width: 350px) {
+        padding: 0;
+    }
+}
+
+.tab-content>.tab-pane {
+    display: none;
+    opacity: 0;
+}
+
+.tab-content>.active {
+    display: block;
+    animation: tab 0.5s linear forwards;
+}
+
+@keyframes tab {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.tabs-nav {
+    background: #F8FBFE;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    padding: 30px 20px;
+    list-style: none;
+
+    &__item {
+        margin-bottom: 15px;
+
+        &.active {
+            .tabs-nav__link {
+                color: #7874FE;
+
+                &::before {
+                    content: '-';
+                    display: block;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    &__link {
+        padding-left: 20px;
+        position: relative;
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #282C4B;
+        text-decoration: none;
+
+        &::before {
+            content: '+';
+            display: block;
+            position: absolute;
+            top:0;
+            left: 0;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #7874FE;
+        }
+    }
+
+}
+
+.tab-content {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ECECF2;
+    border-radius: 4px;
+
+    &__item {
+        h3 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 20px;
+            color: #8A8FB9;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+}

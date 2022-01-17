@@ -1,0 +1,69 @@
+<section id="quick-order" class="section-white section">
+    <div class="container">
+        <div class="section-title section-title--center">
+            <h2>Воспользуйтесь быстрым&nbsp;заказом</h2>
+            <p>Получите бесплатно новых подписчиков, миллионы лайков,<br /> просмотров и&nbsp;комментариев</p>
+        </div>
+
+        <form>
+            <div class="quick-order">
+                <div class="quick-order__row">
+                    <div class="card card-mobile">
+                        <div class="quick-order__item card-body">
+                            <div class="form-group form-group--outline">
+                                <label>Площадка</label>
+                                <div class="select select--icon">
+                                    <select class="selectpicker platform-select" name="platformSelect">
+                                        <option data-icon="ico-instagram" valute="instagram">Instagram</option>
+                                        <option data-icon="ico-telegram" valute="telegram">Telegram</option>
+                                        <option data-icon="ico-twitch" valute="twitch">Twitch</option>
+                                        <option data-icon="ico-twitter" valute="twitter">Twitter</option>
+                                        <option data-icon="ico-youTube" valute="youTube">YouTube</option>
+                                        <option data-icon="ico-tumblr" valute="tumblr">Tumblr</option>
+                                        <option data-icon="ico-discord" valute="discord">Discord</option>
+                                        <option data-icon="ico-vkontakte" valute="vkontakte">Vkontakte</option>
+                                        <option data-icon="ico-snapchat" valute="snapchat">Snapchat</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group form-group--outline">
+                                <label>Тип услуги</label>
+                                <div class="select select--icon">
+                                    <select class="selectpicker service-type" name="serviceType">
+                                        <option data-icon="ico-service-ico" valute="Подписчики">Подписчики</option>
+                                        <option data-icon="ico-service-heart" valute="Instagram">Instagram</option>
+                                        <option data-icon="ico-service-video" valute="YouTube">YouTube</option>
+                                        <option data-icon="ico-service-eye2" valute="Twitch">Twitch</option>
+                                        <option data-icon="ico-service-dashboard" valute="Discord">Discord</option>
+                                        <option data-icon="ico-service-ico" valute="Подписчики">Подписчики</option>
+                                        <option data-icon="ico-service-heart" valute="Instagram">Instagram</option>
+                                        <option data-icon="ico-service-video" valute="YouTube">YouTube</option>
+                                        <option data-icon="ico-service-eye2" valute="Twitch">Twitch</option>
+                                        <option data-icon="ico-service-dashboard" valute="Discord">Discord</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-desktop">
+                        <div class="quick-order__item card-body">
+                            <div class="quick-order__tit">Площадка</div>
+                            @@include('platform.html')
+                        </div>
+                    </div>
+                    <div class="card card-desktop">
+                        <div class="quick-order__item card-body">
+                            <div class="quick-order__tit">Услуга</div>
+                            @@include('service.html')
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="quick-order__item card-body">
+                            @@include('tariff.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,123 @@
+.about {
+    padding: 115px 0;
+
+    @media (max-width: 1367px) {
+        padding: 50px 0;
+    }
+
+    @media (max-width: 600px) {
+        padding: 30px 0;
+    }
+
+    &-description {
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 1367px) {
+                gap: 40px;
+            }
+
+            @media (max-width: 600px) {
+                gap: 20px;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .img {
+            max-width: 515px;
+
+            @media (max-width: 600px) {
+                padding: 0 47px;
+            }
+        }
+
+        .text {
+            max-width: 570px;
+
+            @media (max-width: 900px) {
+                max-width: 380px;
+            }
+
+            h2 {
+                margin-bottom: 25px;
+
+                @media (max-width: 600px) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            p {
+                margin: 25px 0 0;
+
+                @media (max-width: 600px) {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+
+.service-functions {
+    padding: 70px 0;
+
+    @media (max-width: 600px) {
+        padding: 40px 0;
+        max-width: 262px;
+        margin: 0 auto;
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+    }
+    
+
+    @media (max-width: 350px) {
+        max-width: 100%;
+    }
+
+    .item {
+        &-header {
+            display: flex;
+            align-items: center;
+
+            .img {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(131, 105, 252, 0.75);
+                margin-right: 20px;
+                border-radius: 50%;
+            }
+
+            .tit {
+                width: calc(100% - 70px);
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+
+                @media (max-width: 900px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &-body {
+            margin-top: 20px;
+
+            p {
+                line-height: 28px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+    }
+}

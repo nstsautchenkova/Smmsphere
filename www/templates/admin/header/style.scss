@@ -1,0 +1,131 @@
+.header {
+  padding: 32px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition: padding .3s;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .btn {
+      font-size: $primary-FS_14;
+    }
+  }
+
+  &.fix {
+    z-index: 999;
+    padding: 15px 0;
+    background: rgb(255 255 255 / 90%);
+    box-shadow: 0 0 44px rgb(154 156 165 / 20%);
+    transition: background .3s, padding .3s;
+  }
+}
+
+
+.header-admin {
+  background: #fff;
+
+  .header__btn {
+    width: 385px;
+    justify-content: space-between;
+
+    @media (max-width: 1367px) {
+      width: auto;
+    }
+  }
+}
+
+.header-balance {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 27px;
+    gap: 15px;
+  }
+
+  &__tit {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282C4B;
+    margin-right: 15px;
+
+    @media (max-width: 600px) {
+      font-size: 0;
+      line-height: 0;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 103px;
+    }
+
+    .value {
+      color: #7874FE;
+
+      @media (max-width: 600px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 103px;
+        display: block;
+
+        @media (max-width: 350px) {
+          font-size: 0;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    background: rgb(129 129 165 / 10%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 600px) {
+      width: 27px;
+      height: 27px;
+    }
+
+    &:hover {
+      background: #7874FE;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.header-admin {
+  .header__menu {
+    @media (max-width: 1367px) {
+      display: none !important;
+    }
+  }
+
+  .header-user {
+    @media (max-width: 900px) {
+      display: none !important;
+    }
+  }
+}

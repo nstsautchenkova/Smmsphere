@@ -1,0 +1,38 @@
+<div class="notifications">
+    <form class="form admin-form" data-form="notifications">
+
+        <div class="admin-tit">
+            <div class="img"><img src="../img/ico/notifications.svg" alt="" /></div>
+            <h3>Настройка уведомлений</h3>
+        </div>
+
+        <div class="table-inline table">
+            <table>
+                <tr class="tr-tit">
+                    <th>
+                        <div class="table-tit">Событие</div>
+                    </th>
+                    <th>
+                        <div class="table-tit">Сообщение на сайте</div>
+                    </th>
+                    <th>
+                        <div class="table-tit">На эл. почту</div>
+                    </th>
+                    <th>
+                        <div class="table-tit">push-уведомление</div>
+                    </th>
+                </tr>
+
+                <tr class="th-spacer"></tr>
+
+                @@include('table-row.html')
+                @@include('table-row.html')
+                @@include('table-row.html')
+                @@include('table-row.html')
+            </table>
+        </div>
+
+
+        <button type="button" class="btn form-btn form-submit mt-20">Сохранить</button>
+    </form>
+</div>

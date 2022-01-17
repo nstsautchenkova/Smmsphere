@@ -1,0 +1,56 @@
+.rate-area {
+    display: flex;
+    align-items: center;
+    .tit {
+        display: none;
+    }
+}
+
+.star-row {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95px;
+}
+
+.star-row:not(:checked)>label {
+    overflow: hidden;
+    cursor: pointer;
+    width: 19px;
+    height: 18px;
+    margin: 0;
+}
+
+.star-row>input {
+    opacity: 0;
+    display: none;
+}
+
+.star-row>input:checked~label svg path {
+    fill: #E67136;
+}
+
+.star-row:not(:checked)>label:hover svg path,
+.star-row:not(:checked)>label:hover~label svg path {
+    fill: #E67136;
+}
+
+.star-row>input:checked+label:hover svg path,
+.star-row>input:checked+label:hover~label svg path,
+.star-row>input:checked~label:hover svg path,
+.star-row>input:checked~label:hover~label svg path,
+.star-row>label:hover~input:checked~label svg path {
+    fill: #E67136;
+
+}
+
+.star-row>label:active {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.star-row{
+    .star{
+        margin-right: 5px;
+    }
+}

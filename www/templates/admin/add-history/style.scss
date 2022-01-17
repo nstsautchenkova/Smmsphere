@@ -1,0 +1,114 @@
+.add-balance__row {
+    display: grid;
+    grid-template-columns: 265px 367px;
+    justify-content: space-between;
+}
+
+.balance-sum {
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    &__value {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 1px solid #ECECF2;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 14px;
+        color: #282C4B;
+
+        &.active,
+        &:hover {
+            border: 1px solid $blue;
+        }
+    }
+}
+
+.payment-method {
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 23px;
+        border-right: 1px solid #F0F0F3;
+    }
+
+    &__radio {
+        position: relative;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+
+            &:checked~label {
+                border-right: 2px solid #7874FE;
+            }
+
+            &:checked~.radio-mark {
+                &::after {
+                    display: block;
+                }
+            }
+        }
+
+        label {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            align-items: center;
+            gap: 14px;
+
+            .img {
+                width: 50px;
+                height: 32px;
+                background: #F9F9F9;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .tit {
+                display: block;
+                margin: 0;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: #282C4B;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                margin: 0;
+                color: #9A9CA5;
+            }
+        }
+    }
+
+    .radio-mark {
+        height: 100%;
+        right: -27px;
+        top: 0;
+        background: transparent;
+
+        &::after {
+            content: '';
+            background: url(../img/ico/radio-arrow.svg) no-repeat center;
+            display: none;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
